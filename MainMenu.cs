@@ -12,8 +12,8 @@ namespace Algorithm_3._0
                 "Выберите ниже из списка:\n" +
                 "1 Урок №1- Проверка числа простое/непростое\n" +
                 "2 Урок №1- Число Фибоначи рекурсивный метотод / обычный метод\n" +
-                "3 Урок №2- Двусвязный список\n" +
-               /* "4 Урок №3- Tecт Benchmark\n" +*/
+              /*  "3 Урок №2- Двусвязный список\n" +
+                "4 Урок №3- Tecт Benchmark\n" +*/
                 "9-Выход";
         /// <summary>
         /// Главное Меню для программы
@@ -29,13 +29,13 @@ namespace Algorithm_3._0
                     if (numberInter == 1)
                         SimpleNumbers();
 
-                    if (numberInter == 2)
+                   /* if (numberInter == 2)
                         FibonachiNum();
 
                     if (numberInter == 3)
                         DualLinkedList();
 
-                  /*  if (numberInter == 4)
+                    if (numberInter == 4)
                         ClassStructureBenchmark();
                     BenchmarkRunner.Run<MainMenu>();*/
 
@@ -64,23 +64,6 @@ namespace Algorithm_3._0
             simple_Number.Core_SimpleNumber();
         }
         //------------------------------------------------
-        /// <summary>
-        /// Точка вывода проекта чисел Фибоначи
-        /// </summary>
-        public void FibonachiNum()
-        {
-            FibonachiNum fibonachiNum = new FibonachiNum();
-            fibonachiNum.Core_FibonachiNum();
-        }
-        //-------------------------------------------------
-        /// <summary>
-        /// Точка вывода проекта Двусвязного списка
-        /// </summary>
-        public void DualLinkedList()
-        {
-            Node node = new Node();
-            node.Run_DualLinkedList();
-        }
-        //-------------------------------------------------
+
     }
 }
