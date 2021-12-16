@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithm_3._0
 {
-   public  class SimpleNumber
+    public class SimpleNumber
     {
-
-
         /// <summary>
         /// метод проверки чисел
         /// </summary>
@@ -20,7 +14,6 @@ namespace Algorithm_3._0
             string value;
             string text = Console.ReadLine();
             if (int.TryParse(text, out int numberInter))
-
             {
                 while (i < numberInter)
                 {
@@ -62,8 +55,6 @@ namespace Algorithm_3._0
             Console.WriteLine("Программа определения простых и не простых чисел");
             Console.WriteLine("Введите число: ");
             Verification_SimpleNumber();
-
-
         }
     }
 }
