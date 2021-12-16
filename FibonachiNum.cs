@@ -8,7 +8,7 @@ namespace Algorithm_3._0
 {
     class FibonachiNum
     {
-        /// <summary>
+         /// <summary>
         /// Вычисление числа Фибоначи рекурсивным методом
         /// </summary>
         /// <param name="f"></param>
