@@ -41,7 +41,7 @@ namespace Algorithm_3._0
                 X = x;
                 Y = y;
             }
-            public void ClassDouble()
+            public void StructDouble()
             {
                 Console.WriteLine("================== PointDoubleClass");
                 int n = 10;
@@ -58,10 +58,10 @@ namespace Algorithm_3._0
                 }
             }
 
-            public void Run_ClassDouble()
+            public void Run_StructDouble()
             {
                 Console.WriteLine("Teст Benchmark");
-                ClassDouble();
+                StructDouble();
             }
         }
     }

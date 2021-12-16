@@ -1,6 +1,6 @@
-﻿using System;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using System;
 using static Algorithm_3._0.PointDoubleClass;
 
 namespace Algorithm_3._0
@@ -12,7 +12,7 @@ namespace Algorithm_3._0
                 "1 Урок №1- Проверка числа простое/непростое\n" +
                 "2 Урок №1- Число Фибоначи рекурсивный метотод / обычный метод\n" +
                 "3 Урок №2- Двусвязный список\n" +
-               /* "4 Урок №3- Tecт Benchmark\n" +*/
+                "4 Урок №3- Tecт Benchmark\n" +
                 "9-Выход";
         /// <summary>
         /// Главное Меню для программы
@@ -35,8 +35,10 @@ namespace Algorithm_3._0
                         DualLinkedList();
 
                     if (numberInter == 4)
+                    {
                         ClassStructureBenchmark();
-                    BenchmarkRunner.Run<MainMenu>();
+                        BenchmarkRunner.Run<MainMenu>();
+                    }
 
                     if (numberInter == 9)
                         Environment.Exit(0);
@@ -81,5 +83,16 @@ namespace Algorithm_3._0
             node.Run_DualLinkedList();
         }
         //-------------------------------------------------
+        [Benchmark]
+        public void ClassStructureBenchmark()
+        {
+            PointDoubleClass pointDoubleClass = new PointDoubleClass(2, 2);
+            pointDoubleClass.ClassDouble();
+            PointDoublestruct pointDoublestruct = new PointDoublestruct(2, 2);
+            pointDoublestruct.StructDouble();
+
+
+
+        }
     }
 }
