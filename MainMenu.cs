@@ -64,6 +64,23 @@ namespace Algorithm_3._0
             simple_Number.Core_SimpleNumber();
         }
         //------------------------------------------------
-
+        /// <summary>
+        /// Точка вывода проекта чисел Фибоначи
+        /// </summary>
+        public void FibonachiNum()
+        {
+            FibonachiNum fibonachiNum = new FibonachiNum();
+            fibonachiNum.Core_FibonachiNum();
+        }
+        //-------------------------------------------------
+        /// <summary>
+        /// Точка вывода проекта Двусвязного списка
+        /// </summary>
+        public void DualLinkedList()
+        {
+            Node node = new Node();
+            node.Run_DualLinkedList();
+        }
+        //-------------------------------------------------
     }
 }
