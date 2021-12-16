@@ -28,7 +28,7 @@ namespace Algorithm_3._0
                     if (numberInter == 1)
                         SimpleNumbers();
 
-                   /* if (numberInter == 2)
+                    if (numberInter == 2)
                         FibonachiNum();
 
                     if (numberInter == 3)
